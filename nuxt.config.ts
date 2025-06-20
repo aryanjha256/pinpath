@@ -8,14 +8,18 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  modules: ["@pinia/nuxt", "@nuxt/eslint",
-    "@nuxtjs/color-mode",
-    "@nuxt/icon",
+  app: {
+    head: {
+      title: "Pin Path",
+      viewport: "width=device-width, initial-scale=1",
+      meta: [
+        { name: "description", content: "Pin Path - Your Journey, Beautifully Mapped" },
+      ],
+    },
+  },
+  modules: ["@pinia/nuxt", "@nuxt/eslint", "@nuxtjs/color-mode", "@nuxt/icon"],
 
-
-  ],
-
-    eslint: {
+  eslint: {
     config: {
       standalone: false,
     },

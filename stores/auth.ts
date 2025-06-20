@@ -4,7 +4,7 @@ const authClient = createAuthClient();
 
 export const useAuthStore = defineStore("useAuthStore", () => {
   const session = ref<Awaited<ReturnType<typeof authClient.useSession>> | null>(
-    null
+    null,
   );
 
   async function init() {
