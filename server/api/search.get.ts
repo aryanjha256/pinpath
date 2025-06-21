@@ -16,7 +16,7 @@ export default defineAuthenticatedEventHandler(
       const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${result.data.q}&format=json`, {
         signal: AbortSignal.timeout(5000),
         headers: {
-          "User-Agent": "nuxt-travel-log | cj@null.computer",
+          "User-Agent": "pinpath | itsaryankumarhere@gmail.com",
         },
       });
 
