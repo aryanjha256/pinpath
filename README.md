@@ -1,67 +1,51 @@
-# Nuxt Minimal Starter
+# Pin Path
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+> Capture your journey, beautifully mapped.
 
-## Setup
+## Demo
 
-Make sure to install dependencies:
+[https://pinpath.itsaryankumar.dev/](https://pinpath.vercel.app/)
 
-```bash
-# pnpm
-pnpm install
+## Features
 
-```
+- 🔍 Search for locations
+- 📍 Add locations and location logs
+- 📸 Add images to locations
+- 📝 Add notes to locations
+- 📊 View location logs
+- 📈 View location logs in a map
 
-## Development Server
+## Roadmap
 
-Start the development server on `http://localhost:3000`:
+- 📄 View location logs in a table, timeline, graph, heatmap, treemap, calendar, gantt chart
+- 📦 Export location logs as a CSV
+- 📦 Export location logs as a PDF
 
-```bash
-# npm
-npm run dev
+## Getting Started
 
-# pnpm
-pnpm dev
+### 1. Sign in
 
-# yarn
-yarn dev
+### 2. Add a location
 
-# bun
-bun run dev
-```
+### 2. Add a location log
 
-## Production
+### 3. Add images to a location log
 
-Build the application for production:
+### 4. Add notes to a location log
 
-```bash
-# npm
-npm run build
+### 5. View location logs
 
-# pnpm
-pnpm build
+### 6. View location logs in a map
 
-# yarn
-yarn build
+## Contributing
 
-# bun
-bun run build
-```
+Contributions are welcome! Please open an issue or submit a pull request.
 
-Locally preview production build:
+## License
 
-```bash
-# npm
-npm run preview
+This project is licensed under the MIT License.
 
-# pnpm
-pnpm preview
+## Limitations
 
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- 🚧 Currently, only the first 100 results are returned from the Nominatim API.
+- 🚧 Currently, S3 apis are not working.
