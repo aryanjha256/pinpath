@@ -12,7 +12,6 @@ export default function defineAuthenticatedEventHandler<T>(
   handler: (event: AuthenticatedEvent) => T,
 ) {
   return defineEventHandler(async (event) => {
-    console.log(event.context.user);
     if (!event.context.user) {
       throw createError({
         statusCode: 401,
