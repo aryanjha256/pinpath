@@ -6,7 +6,7 @@ import { toTypedSchema } from "@vee-validate/zod";
 
 import type { LatLongItem, NominatimResult } from "~/lib/types";
 
-import { CENTER_USA } from "~/lib/constants";
+import { MAP_CENTER } from "~/lib/constants";
 
 const props = defineProps<{
   initialValues: T;
@@ -80,8 +80,8 @@ onMounted(() => {
     id: 1,
     name: "Added Point",
     description: "",
-    long: props.initialValues?.long || (CENTER_USA as [number, number])[0],
-    lat: props.initialValues?.lat || (CENTER_USA as [number, number])[1],
+    long: props.initialValues?.long || (MAP_CENTER as [number, number])[0],
+    lat: props.initialValues?.lat || (MAP_CENTER as [number, number])[1],
     zoom: props.zoom,
   };
 });

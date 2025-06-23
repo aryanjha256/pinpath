@@ -2,7 +2,7 @@ import type { LngLatBounds } from "maplibre-gl";
 
 import type { MapPoint } from "~/lib/types";
 
-import { CENTER_USA } from "~/lib/constants";
+import { MAP_CENTER } from "~/lib/constants";
 
 export const useMapStore = defineStore("useMapStore", () => {
   const mapPoints = ref<MapPoint[]>([]);
@@ -22,7 +22,7 @@ export const useMapStore = defineStore("useMapStore", () => {
       const firstPoint = mapPoints.value[0];
       if (!firstPoint) {
         map.map?.flyTo({
-          center: CENTER_USA,
+          center: MAP_CENTER,
           zoom: 2,
         });
         return;

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { CENTER_USA } from "~/lib/constants";
+import { MAP_CENTER } from "~/lib/constants";
 import { InsertLocationLog } from "~/lib/db/schema";
 
 const props = defineProps<{
@@ -15,8 +15,8 @@ const initialValues = {
   description: "",
   startedAt: Date.now() - (24 * 60 * 60 * 1000),
   endedAt: Date.now(),
-  long: (CENTER_USA as [number, number])[0],
-  lat: (CENTER_USA as [number, number])[1],
+  long: (MAP_CENTER as [number, number])[0],
+  lat: (MAP_CENTER as [number, number])[1],
 };
 </script>
 

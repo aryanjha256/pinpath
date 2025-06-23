@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { CENTER_USA } from "~/lib/constants";
+import { MAP_CENTER } from "~/lib/constants";
 import { InsertLocation } from "~/lib/db/schema";
 
 const props = defineProps<{
@@ -20,8 +20,8 @@ const props = defineProps<{
     :initial-values="props.initialValues || {
       name: '',
       description: '',
-      long: (CENTER_USA as [number, number])[0],
-      lat: (CENTER_USA as [number, number])[1],
+      long: (MAP_CENTER as [number, number])[0],
+      lat: (MAP_CENTER as [number, number])[1],
     }"
     :on-submit
     :on-submit-complete

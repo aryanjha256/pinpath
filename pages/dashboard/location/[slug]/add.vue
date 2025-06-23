@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { InsertLocationLog } from "~/lib/db/schema";
 
-import { CENTER_USA } from "~/lib/constants";
+import { MAP_CENTER } from "~/lib/constants";
 
 const route = useRoute();
 const { currentLocation } = useLocationStore();
@@ -36,8 +36,8 @@ function submitComplete() {
       description: '',
       startedAt: Date.now() - (24 * 60 * 60 * 1000),
       endedAt: Date.now(),
-      long: currentLocation?.long || (CENTER_USA as [number, number])[0],
-      lat: currentLocation?.lat || (CENTER_USA as [number, number])[1],
+      long: currentLocation?.long || (MAP_CENTER as [number, number])[0],
+      lat: currentLocation?.lat || (MAP_CENTER as [number, number])[1],
     }"
   />
 </template>

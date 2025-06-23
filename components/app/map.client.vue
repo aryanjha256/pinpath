@@ -2,7 +2,7 @@
 import type { MglEvent } from "@indoorequal/vue-maplibre-gl";
 import type { LngLat } from "maplibre-gl";
 
-import { CENTER_USA } from "~/lib/constants";
+import { MAP_CENTER } from "~/lib/constants";
 
 const colorMode = useColorMode();
 const mapStore = useMapStore();
@@ -35,7 +35,7 @@ onMounted(() => {
 <template>
   <MglMap
     :map-style="style"
-    :center="CENTER_USA"
+    :center="MAP_CENTER"
     :zoom="zoom"
     @map:dblclick="onDoubleClick"
   >
