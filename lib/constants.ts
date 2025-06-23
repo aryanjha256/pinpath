@@ -1,6 +1,6 @@
 import type { LngLatLike } from "maplibre-gl";
 
-export const MAP_CENTER = [20.5937, 78.9629] as LngLatLike;
+export const MAP_CENTER = [78.9629, 20.5937] as LngLatLike;
 
 export const LOCATION_PAGES = new Set(["dashboard", "dashboard-add"]);
 export const CURRENT_LOCATION_LOG_PAGES = new Set([
