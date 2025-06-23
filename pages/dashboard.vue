@@ -193,6 +193,12 @@ function toggleSidebar() {
           icon="tabler:logout-2"
           href="/sign-out"
         />
+        <SidebarButton
+          :show-label="isSidebarOpen"
+          label="Settings"
+          icon="tabler:settings"
+          href="/dashboard/settings"
+        />
       </div>
     </div>
     <div class="flex-1 overflow-auto bg-base-200">
